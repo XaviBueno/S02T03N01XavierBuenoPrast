@@ -2,22 +2,26 @@
 db = db.getSiblingDB('culdampolla')
 db.dropDatabase()
 
+db.ulleres.insertMany([
+	{_id:"id_ulleres1",marca:"marca1",grad_ud:"grad_ud1",grad_ue:"grad_ue1",muntura:"flotant",color_munt:"color1",color_vid:"color1",preu:100,proveidor:"id_proveidor1"},
+	{_id:"id_ulleres2",marca:"marca2",grad_ud:"grad_ud2",grad_ue:"grad_ue2",muntura:"flotant",color_munt:"color2",color_vid:"color2",preu:200,proveidor:"id_proveidor1"},
+	{_id:"id_ulleres3",marca:"marca3",grad_ud:"grad_ud3",grad_ue:"grad_ue3",muntura:"flotant",color_munt:"color3",color_vid:"color3",preu:300,proveidor:"id_proveidor2"},
+	{_id:"id_ulleres4",marca:"marca4",grad_ud:"grad_ud4",grad_ue:"grad_ue4",muntura:"flotant",color_munt:"color4",color_vid:"color4",preu:400,proveidor:"id_providor4"},
+	{_id:"id_ulleres5",marca:"marca5",grad_ud:"grad_ud5",grad_ue:"grad_ue5",muntura:"flotant",color_munt:"color5",color_vid:"color5",preu:500,proveidor:"id_proveidor5"},
+	{_id:"id_ulleres6",marca:"marca6",grad_ud:"grad_ud6",grad_ue:"grad_ue6",muntura:"flotant",color_munt:"color6",color_vid:"color6",preu:600,proveidor:"id_proveidor1"},
+	{_id:"id_ulleres7",marca:"marca7",grad_ud:"grad_ud7",grad_ue:"grad_ue7",muntura:"flotant",color_munt:"color7",color_vid:"color7",preu:100,proveidor:"id_proveidor6"},
+	{_id:"id_ulleres8",marca:"marca8",grad_ud:"grad_ud8",grad_ue:"grad_ue8",muntura:"flotant",color_munt:"color8",color_vid:"color8",preu:400,proveidor:"id_proveidor6"},
+	{_id:"id_ulleres9",marca:"marca9",grad_ud:"grad_ud9",grad_ue:"grad_ue9",muntura:"flotant",color_munt:"color9",color_vid:"color9",preu:300,proveidor:"id_proveidor6"}
+	]
+)
+	
 db.proveidor.insertMany([
-	{nom: "proveidor1",carrer:"carrer1",num:"num1",pis:"pis1",porta:"porta1",ciutat:"ciutat1",cp:"cp1",pais:"pais1",telef:"telef1",fax:"fax1",nif:"nif1",
-		ulleres:[{_id:"id_ulleres1",marca:"marca1",grad_ud:"grad_ud1",grad_ue:"grad_ue1",muntura:"flotant",color_munt:"color1",color_vid:"color1",preu:100},
-				{_id:"id_ulleres2",marca:"marca2",grad_ud:"grad_ud2",grad_ue:"grad_ue2",muntura:"flotant",color_munt:"color2",color_vid:"color2",preu:200}]},
-	{nom: "proveidor2",carrer:"carrer2",num:"num2",pis:"pis2",porta:"porta2",ciutat:"ciutat2",cp:"cp2",pais:"pais2",telef:"telef2",fax:"fax2",nif:"nif2",
-		ulleres:[{_id:"id_ulleres3",marca:"marca3",grad_ud:"grad_ud3",grad_ue:"grad_ue3",muntura:"flotant",color_munt:"color3",color_vid:"color3",preu:300},
-				{_id:"id_ulleres4",marca:"marca4",grad_ud:"grad_ud4",grad_ue:"grad_ue4",muntura:"flotant",color_munt:"color4",color_vid:"color4",preu:400}]},
-	{nom: "proveidor3",carrer:"carrer3",num:"num3",pis:"pis3",porta:"porta3",ciutat:"ciutat3",cp:"cp3",pais:"pais3",telef:"telef3",fax:"fax3",nif:"nif3",
-		ulleres:{_id:"id_ulleres5",marca:"marca5",grad_ud:"grad_ud5",grad_ue:"grad_ue5",muntura:"flotant",color_munt:"color5",color_vid:"color5",preu:500}},
-	{nom: "proveidor4",carrer:"carrer4",num:"num4",pis:"pis4",porta:"porta4",ciutat:"ciutat4",cp:"cp4",pais:"pais4",telef:"telef3",fax:"fax3",nif:"nif3",
-		ulleres:{_id:"id_ulleres6",marca:"marca6",grad_ud:"grad_ud6",grad_ue:"grad_ue6",muntura:"flotant",color_munt:"color6",color_vid:"color6",preu:600}},
-	{nom: "proveidor5",carrer:"carrer5",num:"num5",pis:"pis5",porta:"porta5",ciutat:"ciutat5",cp:"cp5",pais:"pais5",telef:"telef3",fax:"fax3",nif:"nif3",
-		ulleres:{_id:"id_ulleres7",marca:"marca7",grad_ud:"grad_ud7",grad_ue:"grad_ue7",muntura:"flotant",color_munt:"color7",color_vid:"color7",preu:100}},
-	{nom: "proveidor6",carrer:"carrer6",num:"num6",pis:"pis6",porta:"porta6",ciutat:"ciutat6",cp:"cp6",pais:"pais6",telef:"telef6",fax:"fax6",nif:"nif6",
-		ulleres:[{_id:"id_ulleres8",marca:"marca8",grad_ud:"grad_ud8",grad_ue:"grad_ue8",muntura:"flotant",color_munt:"color8",color_vid:"color8",preu:400},
-				{_id:"id_ulleres9",marca:"marca9",grad_ud:"grad_ud9",grad_ue:"grad_ue9",muntura:"flotant",color_munt:"color9",color_vid:"color9",preu:300}]}
+	{_id:"id_proveidor1",nom: "proveidor1",carrer:"carrer1",num:"num1",pis:"pis1",porta:"porta1",ciutat:"ciutat1",cp:"cp1",pais:"pais1",telef:"telef1",fax:"fax1",nif:"nif1"},
+	{_id:"id_proveidor2",nom: "proveidor2",carrer:"carrer2",num:"num2",pis:"pis2",porta:"porta2",ciutat:"ciutat2",cp:"cp2",pais:"pais2",telef:"telef2",fax:"fax2",nif:"nif2"},
+	{_id:"id_proveidor3",nom: "proveidor3",carrer:"carrer3",num:"num3",pis:"pis3",porta:"porta3",ciutat:"ciutat3",cp:"cp3",pais:"pais3",telef:"telef3",fax:"fax3",nif:"nif3"},
+	{_id:"id_proveidor4",nom: "proveidor4",carrer:"carrer4",num:"num4",pis:"pis4",porta:"porta4",ciutat:"ciutat4",cp:"cp4",pais:"pais4",telef:"telef3",fax:"fax3",nif:"nif3"},
+	{_id:"id_proveidor5",nom: "proveidor5",carrer:"carrer5",num:"num5",pis:"pis5",porta:"porta5",ciutat:"ciutat5",cp:"cp5",pais:"pais5",telef:"telef3",fax:"fax3",nif:"nif3"},
+	{_id:"id_proveidor6",nom: "proveidor6",carrer:"carrer6",num:"num6",pis:"pis6",porta:"porta6",ciutat:"ciutat6",cp:"cp6",pais:"pais6",telef:"telef6",fax:"fax6",nif:"nif6"}
 	]
 )
 
@@ -40,7 +44,7 @@ db.clients.insertMany([
 
 
 
-db.ventes.insertMany([
+db.vendes.insertMany([
 	{client_id:"id_client3",ulleres_id:["id_ulleres5","id_ulleres4"],empleat:"empleat1",data_venta:new Date(2022,07,18)},
 	{client_id:"id_client1",ulleres_id:"id_ulleres9",empleat:"empleat4",data_venta:new Date(2022,12,20)},
 	{client_id:"id_client8",ulleres_id:"id_ulleres4",empleat:"empleat3",data_venta:new Date(2022,07,03)},
